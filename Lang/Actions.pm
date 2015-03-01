@@ -1,9 +1,9 @@
-my %var;
-
 class Lang::Actions;
 
+has %.var;
+
 method assignment($/) {
-    %var{$<identifier>} = $<expression>.ast;
+    %!var{$<identifier>} = $<expression>.ast;
 }
 
 method printout($/) {
@@ -57,7 +57,7 @@ method term($/) {
 
 method factor($/) {
     if $<identifier> {
-        $/.make: %var{~$<identifier>} // 0
+        $/.make: %!var{~$<identifier>} // 0
     }
     elsif $<value> {
         $/.make: $<value>.ast
