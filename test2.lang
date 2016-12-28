@@ -3,3 +3,6 @@ print x;
 
 y = x - (5/2);
 print y;
+
+z = 1 + y * x;
+print z;
