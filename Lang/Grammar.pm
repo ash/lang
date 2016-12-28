@@ -1,4 +1,4 @@
-grammar Lang::Grammar;
+unit grammar Lang::Grammar;
 
 rule TOP {
     ^ <statements> $

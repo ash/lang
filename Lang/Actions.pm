@@ -1,4 +1,4 @@
-class Lang::Actions;
+unit class Lang::Actions;
 
 has %.var;
 
