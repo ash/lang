@@ -46,7 +46,7 @@ token identifier {
 
 token value {
     (
-        | \d+['.' \d+]*
+        | \d+['.' \d+]?
         | '.' \d+
     )
 }
